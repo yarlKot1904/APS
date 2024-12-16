@@ -3,11 +3,13 @@
     "NumberOfSources": 4,
     "NumberOfBuffers": 4,
     "BufferCapacity": 1,
-    "MeanServiceTime": 0.2,
-    "MinInterArrivalTime": 1.0,
-    "MaxInterArrivalTime": 2.0,
+    "MeanServiceTime": 5.0,
+    "MinInterArrivalTime": 2.0,
+    "MaxInterArrivalTime": 3.0,
     "MaxRequests": 100,
-    "NumberOfDevices": 2
+    "NumberOfDevices": 2,
+    "ConfidenceLevel": 0.9,
+    "RelativePrecision": 0.1
   }
 }
   
