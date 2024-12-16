@@ -1,0 +1,13 @@
+{
+  "SimulationConfig": {
+    "NumberOfSources": 4,
+    "NumberOfBuffers": 4,
+    "BufferCapacity": 1,
+    "MeanServiceTime": 0.2,
+    "MinInterArrivalTime": 1.0,
+    "MaxInterArrivalTime": 2.0,
+    "MaxRequests": 100,
+    "NumberOfDevices": 2
+  }
+}
+  
