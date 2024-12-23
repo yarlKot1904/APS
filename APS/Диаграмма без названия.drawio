@@ -17,48 +17,37 @@
             <mxRectangle x="140" y="170" width="50" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="movLkcahRa3hKP9TegVr-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="movLkcahRa3hKP9TegVr-1" source="movLkcahRa3hKP9TegVr-4" target="movLkcahRa3hKP9TegVr-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="movLkcahRa3hKP9TegVr-4" value="Старт" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="movLkcahRa3hKP9TegVr-1">
           <mxGeometry x="20" y="10" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="movLkcahRa3hKP9TegVr-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="movLkcahRa3hKP9TegVr-1" source="movLkcahRa3hKP9TegVr-5" target="movLkcahRa3hKP9TegVr-7">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="movLkcahRa3hKP9TegVr-12" value="Нет" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="movLkcahRa3hKP9TegVr-8">
-          <mxGeometry x="-0.1244" y="2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="movLkcahRa3hKP9TegVr-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="movLkcahRa3hKP9TegVr-1" source="movLkcahRa3hKP9TegVr-5" target="movLkcahRa3hKP9TegVr-9">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="movLkcahRa3hKP9TegVr-11" value="Да" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="movLkcahRa3hKP9TegVr-10">
-          <mxGeometry x="0.0543" y="1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="movLkcahRa3hKP9TegVr-5" value="Количество реквестов меньше N" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="movLkcahRa3hKP9TegVr-1">
-          <mxGeometry x="110" y="5" width="150" height="95" as="geometry" />
-        </mxCell>
-        <mxCell id="movLkcahRa3hKP9TegVr-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="movLkcahRa3hKP9TegVr-1" source="movLkcahRa3hKP9TegVr-4" target="movLkcahRa3hKP9TegVr-5">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="190" y="170" as="sourcePoint" />
-            <mxPoint x="240" y="120" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="movLkcahRa3hKP9TegVr-7" value="&amp;nbsp;Получить ближайшее событие" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="movLkcahRa3hKP9TegVr-1">
-          <mxGeometry x="290" y="90" width="170" height="80" as="geometry" />
+          <mxGeometry x="180" y="30" width="170" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="movLkcahRa3hKP9TegVr-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="movLkcahRa3hKP9TegVr-1" source="movLkcahRa3hKP9TegVr-9" target="movLkcahRa3hKP9TegVr-7">
+        <mxCell id="movLkcahRa3hKP9TegVr-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="movLkcahRa3hKP9TegVr-1" source="movLkcahRa3hKP9TegVr-15" target="movLkcahRa3hKP9TegVr-20">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="movLkcahRa3hKP9TegVr-9" value="Создаем следующие события" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="movLkcahRa3hKP9TegVr-1">
-          <mxGeometry x="300" y="10" width="150" height="40" as="geometry" />
         </mxCell>
         <mxCell id="movLkcahRa3hKP9TegVr-15" value="" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="movLkcahRa3hKP9TegVr-1">
           <mxGeometry x="80" y="150" width="100" height="80" as="geometry" />
         </mxCell>
         <mxCell id="movLkcahRa3hKP9TegVr-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.841;entryY=0.528;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="movLkcahRa3hKP9TegVr-1" source="movLkcahRa3hKP9TegVr-7" target="movLkcahRa3hKP9TegVr-15">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="movLkcahRa3hKP9TegVr-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="movLkcahRa3hKP9TegVr-1" source="movLkcahRa3hKP9TegVr-20" target="movLkcahRa3hKP9TegVr-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="movLkcahRa3hKP9TegVr-27" value="Да" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="movLkcahRa3hKP9TegVr-26">
+          <mxGeometry x="-0.0573" y="-2" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="movLkcahRa3hKP9TegVr-20" value="Количество реквестов меньше N" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="movLkcahRa3hKP9TegVr-1">
+          <mxGeometry x="274" y="150" width="150" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="movLkcahRa3hKP9TegVr-25" value="Создаем следующие отправления" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="movLkcahRa3hKP9TegVr-1">
+          <mxGeometry x="410" y="230" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="movLkcahRa3hKP9TegVr-2" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Получить следующий шаг&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="240" y="130" width="100" height="40" as="geometry" />
@@ -69,7 +58,15 @@
         <mxCell id="movLkcahRa3hKP9TegVr-17" value="Обрабатываем событие" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="280" y="545" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="movLkcahRa3hKP9TegVr-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="movLkcahRa3hKP9TegVr-15" target="movLkcahRa3hKP9TegVr-17">
+        <mxCell id="movLkcahRa3hKP9TegVr-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="movLkcahRa3hKP9TegVr-20" target="movLkcahRa3hKP9TegVr-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="movLkcahRa3hKP9TegVr-24" value="Нет" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="movLkcahRa3hKP9TegVr-23">
+          <mxGeometry x="-0.19" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="movLkcahRa3hKP9TegVr-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="movLkcahRa3hKP9TegVr-25" target="movLkcahRa3hKP9TegVr-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
