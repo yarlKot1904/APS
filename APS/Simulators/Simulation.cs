@@ -13,6 +13,7 @@ namespace APS.Simulators
         public List<Device> Devices { get; private set; }
         public EventQueue EventQueue { get; private set; }
         public int MaxRequests { get; private set; }
+        public int[] SourceSentTimes { get; private set; }
         public bool AutoMode { get; set; }
 
         // Stats
@@ -75,6 +76,7 @@ namespace APS.Simulators
             BufferWaitTimes = new List<double>[numberOfSources];
             DeviceUsageTimes = new double[numberOfDevices];
             DeviceUsageTimesBySources = new double[numberOfSources];
+            SourceSentTimes = new int[numberOfSources];
 
             for (int i = 0; i < numberOfSources; i++)
             {
@@ -93,6 +95,8 @@ namespace APS.Simulators
             this.currentSampleSize = maxRequests;
 
             ScheduleNextArrival();
+            FinalRefusalProbability = RefusalCounts.Sum() / maxRequests;
+
         }
 
         public void DetermineOptimalSampleSize()
@@ -211,6 +215,8 @@ namespace APS.Simulators
             AllRequests.Add(newRequest);
 
             visualSimulator.AddRequest(requestId, sourceId);
+
+            SourceSentTimes[sourceId]++;
 
             AssignRequest(newRequest);
 
@@ -369,7 +375,7 @@ namespace APS.Simulators
         private double Exponential(double mean)
         {
             double u = rand.NextDouble();
-            return -mean * Math.Log(1 - u);
+            return mean * Math.Log(2.1 - u);
         }
 
         public void Step()

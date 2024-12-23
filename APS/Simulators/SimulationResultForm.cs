@@ -4,6 +4,7 @@
     {
         private Label finalNLabel;
         private Label finalPLabel;
+        private Label finalTLabel;
 
         public SimulationResultsForm(Simulation simulation)
         {
@@ -30,6 +31,8 @@
             sourcesGrid.Columns.Add("UsedBuffers", "Использование буферов");
 
             int numSources = simulation.RefusalCounts.Length;
+            double avgTimeInSystem = 0;
+
             for (int i = 0; i < numSources; i++)
             {
                 double avgServiceTime = simulation.ServiceTimes[i].Count > 0 ? simulation.ServiceTimes[i].Average() : 0;
@@ -40,10 +43,11 @@
                 double bufferVariance = simulation.BufferWaitTimes[i].Count > 0 ? simulation.BufferWaitTimes[i].Select(x => Math.Pow(x - avgBufferTime, 2)).Average() : 0;
                 double deviceUtilization = simulation.DeviceUsageTimesBySources[i] / (simulation.CurrentTime);
                 string usedBuffers = simulation.BufferWaitTimes[i].Count > 0 ? "Да" : "Нет";
+                avgTimeInSystem += simulation.TotalWaitTimes[i] + simulation.ServiceTimes[i].Sum();
 
                 sourcesGrid.Rows.Add(
                     $"И{i + 1}",
-                    simulation.MaxRequests,
+                    simulation.SourceSentTimes[i],
                     $"{(double)simulation.RefusalCounts[i] / simulation.TotalRequestsTimes[i]:F4}",
                     $"{avgWaitTime:F4}",
                     $"{avgServiceTime:F4}",
@@ -55,6 +59,8 @@
                     usedBuffers
                 );
             }
+
+            avgTimeInSystem /= simulation.AllRequests.Count;
 
             DataGridView devicesGrid = new DataGridView
             {
@@ -86,15 +92,27 @@
                 Font = new Font("Arial", 12, FontStyle.Bold)
             };
             this.Controls.Add(finalNLabel);
+            var estimatedP = (float)simulation.RefusalCounts.Sum() / simulation.MaxRequests;
 
             finalPLabel = new Label
             {
-                Text = $"Estimated p(A): {simulation.FinalRefusalProbability:F4}",
+                Text = $"Estimated p(A): {estimatedP:F4}",
                 Location = new Point(20, 560),
                 AutoSize = true,
                 Font = new Font("Arial", 12, FontStyle.Bold)
             };
             this.Controls.Add(finalPLabel);
+
+            
+
+            finalTLabel = new Label
+            {
+                Text = $"Avg Time in system: {avgTimeInSystem:F4}",
+                Location = new Point(20, 600),
+                AutoSize = true,
+                Font = new Font("Arial", 12, FontStyle.Bold)
+            };
+            this.Controls.Add(finalTLabel);
         }
     }
 
